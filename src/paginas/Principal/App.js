@@ -36,6 +36,7 @@ export default function App() {
             <Transacao realizarTransacao={realizarTransacao} />
           )}
           <Outlet />
+          <novoscript data-testid='local'>{location.pathname}</novoscript>
         </div>
         <Extrato transacoes={transacoes} />
       </main>
